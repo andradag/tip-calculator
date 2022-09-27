@@ -30,8 +30,8 @@ const renderAmounts = (event) => {
     const total = calculateTotal(inputTotal, tipAmount);
 
     // render amounts on the page
-    tipSpanElement.textContent = tipAmount;
-    totalSpanElement.textContent = total;
+    tipSpanElement.textContent = tipAmount.toFixed(2);
+    totalSpanElement.textContent = total.toFixed(2);
   } else {
     //alert invalid form inputs
     alert("Please enter valid number");
